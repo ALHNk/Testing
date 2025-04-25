@@ -62,13 +62,13 @@ public class LoginTest {
         String title = driver.getTitle();
         Assert.assertEquals(title, "Login", "Not logged out");
     }
-    @AfterClass
-    public void tearDown()
-    {
-        System.out.println("Tear down with Web_Driver");
-        if(driver != null)
+        @AfterClass
+        public void tearDown()
         {
-            driver.quit();
+            System.out.println("Tear down with Web_Driver");
+            if(driver != null)
+            {
+                driver.quit();
+            }
         }
-    }
 }

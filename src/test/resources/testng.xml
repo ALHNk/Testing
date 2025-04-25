@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="SuharikTesting">
+    <parameter name="url" value="https://alhnk.github.io/Donernaya/codes/" />
+    <parameter name="register_url" value="https://alhnk.github.io/Donernaya/codes/register.html" />
+    <parameter name="login_url" value="https://alhnk.github.io/Donernaya/codes/login.html" />
+    <parameter name="first_name" value="alikhan" />
+    <parameter name="password" value="1234567" />
+    <parameter name="email" value="kuh@mail.ru" />
+    <parameter name="city" value="Aktobe" />
+    <test name="Logger">
+        <classes>
+            <class name = "suharik.SQA.UniversalLoginTester"></class>
+        </classes>
+    </test>
+</suite>
